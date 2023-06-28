@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="genralStyle.css">
+    <style>
+        body {
+            background-color: #F1F1F1;
+        }
+
+        #obqvi1,
+        #obqvi2 {
+            padding: 10px;
+            text-align: center;
+            width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto
+        }
+
+        #otstupka {
+            float: left;
+            background-color: rgb(189, 46, 101);
+            color: white;
+            font-weight: bold;
+        }
+
+        #obqvi1 img,
+        #obqvi2 img {
+            height: 200px;
+        }
+
+        #ime {
+            font-weight: bold
+        }
+
+        #broi {
+            color: yellowgreen;
+        }
+
+        #price {
+            font-weight: bold;
+        }
+
+        #kontiner {
+            width: 300px;
+            height: 450px;
+            background-color: white;
+        }
+
+        #kontiner:hover {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+
+        #info {
+            color: black;
+        }
+
+        #kontiner div:hover {
+            color: white;
+            background-color: rgb(174, 173, 173);
+            width: 100px;
+            height: 25px;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        #obqvi2 {
+            padding-top: 30px;
+        }
+        #video{
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="Home.html"><img src="logo.avif" alt=""></a>
+        </div>
+        <nav id="butoni">
+            <div class="menu"><a href="Home.html">Начало</a></div>
+            <div class="menu_now"><a href="Parfume.html">Парфюми</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Грим</button>
+                <div class="dropdown-content">
+                    <a href="grimOchi.html">Очи</a>
+                    <a href="grimUstni.html">Устни</a>
+                    <a href="grimVezdi.html">Вежди</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Коса</button>
+                <div class="dropdown-content">
+                    <a href="Kosa.html#kosa1">Шампоан</a>
+                    <a href="Kosa.html#kosa2">Боя за коса</a>
+                    <a href="Kosa.html#kosa3">Балсам</a>
+                    <a href="Kosa.html#kosa4">Серум</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Лице</button>
+                <div class="dropdown-content">
+                    <a href="lice1.html">Маска за лице</a>
+                    <a href="lice2.html">Кремове</a>
+                </div>
+            </div>
+            <div class="menu"><a href="Kontakti.html">Контакти</a></div>
+        </nav>
+        <div id="contacti">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="Home\facebook.webp" alt=""></a> Facebook</li>
+                <li><a href="https://www.instagram.com/"><img src="Home\instagram.webp" alt=""></a> Instagram</li>
+                <li><a href="Kontakti.html"><img src="Home\phone.png" alt=""></a> Phone </li>
+            </ul>
+        </div>
+
+    </header>
+    <div id="video">
+        <iframe width="600" height="355" src="https://www.youtube.com/embed/7xRz_uB-NKg" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <p id="parf" style="font-size: 30px;">П А Р Ф Ю М И</p>
+
+    <div id="obqvi1">
+        <div id="kontiner">
+            <img src="Парфюм\par1.webp" alt="">
+            <p id="ime">CALVIN KLEIN EUPHORIA</p>
+            <p id="qulity">Качество: 4 <span style="font-size:25px">&#9733</span></p>
+            <p id="broi">Налични: 4</p>
+            <p id="price">Цена: 29,80 лв.</p>
+            <div id="nz"><a id="info" href="">Купи</a></div>
+        </div>
+        <div id="kontiner"><img src="Парфюм\par2.jpg" alt="">
+            <p id="ime">CALVIN KLEIN </p>
+            <p id="qulity">Качество: 3,5 <span style="font-size:25px">&#9733</span></p>
+            <p id="broi">Налични: 10</p>
+            <p id="price">Цена: 40,90 лв.</p>
+            <div><a id="info" href="">Купи</a></div>
+        </div>
+        <div id="kontiner"><img src="Парфюм\par3.jpg" alt="">
+            <p id="ime">HERMES H24</p>
+            <p id="qulity">Качество: 5 <span style="font-size:25px">&#9733</span></p>
+            <p id="broi">Налични: 5</p>
+            <p id="price">Цена: 84,80 лв.</p>
+            <div><a id="info" href="">Купи</a></div>
+        </div>
+    </div>
+
+    <div id="obqvi2">
+        <div id="kontiner"><img src="Парфюм\par4.jpg" alt="">
+            <p id="ime">JOOP! HOMME</p>
+            <p id="qulity">Качество: 5 <span style="font-size:25px">&#9733</span></p>
+            <p id="broi">Налични: 3</p>
+            <p id="price">Цена: 59,50 лв.</p>
+            <div><a id="info" href="">Купи</a></div>
+        </div>
+        <div id="kontiner"><img src="Парфюм\par5.webp" alt="">
+            <p id="ime">CHLOÉ CHLOÉ</p>
+            <p id="qulity">Качество: 4 <span style="font-size:25px">&#9733</span></p>
+            <p id="broi">Налични: 8</p>
+            <p id="price">Цена: 107,10 лв.</p>
+            <div><a id="info" href="">Купи</a></div>
+        </div>
+        <div id="kontiner"><img src="Парфюм\par6.webp" alt="">
+            <p id="ime">HUGO BOSS BOSS ALIVE</p>
+            <p id="qulity">Качество: 4 <span style="font-size:25px">&#9733</span></p>
+            <p id="broi">Налични: 7</p>
+            <p id="price">Цена: 78,70 лв.</p>
+            <div><a id="info" href="">Купи</a></div>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div>От Емили Борисова</div>
+        <div>ун. "Св. Св. Кирил и Методии", град Търново</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="genralStyle.css">
+    <style>
+        body {
+            background-color: #F1F1F1;
+        }
+
+        #HairShampoo,
+        #hairLosion,
+        #hairBalsam,
+        #hairSerum {
+            display: flex;
+            padding: 30px;
+        }
+
+        #HairShampoo div,
+        #hairLosion div,
+        #hairBalsam div,
+        #hairSerum div {
+            width: 50%;
+
+        }
+
+        #HairShampoo img,
+        #hairLosion img,
+        #hairBalsam img,
+        #hairSerum img {
+            width: 200px;
+        }
+
+        #bigDiv {
+            margin: auto;
+        }
+
+        #shampoan1,
+        #shampoan2,
+        #boi1,
+        #boi2,
+        #balsam1,
+        #balsam2,
+        #serum1,
+        #serum2 {
+            display: flex;
+            background-color: white;
+            padding: 20px;
+            border: solid rgb(209, 208, 208) 2px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #center {
+            text-align: center;
+            padding-right: 20px;
+        }
+
+
+
+
+
+        .mySlides {
+            display: none;
+        }
+
+        #slidera img {
+            width: 400px;
+        }
+
+        .slideshow-container {
+            width: 700px;
+            height: 450px;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            border: 1px solid rgb(203, 202, 202);
+            background-color: white;
+        }
+
+        .text {
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 1s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-duration: 3.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="Home.html"><img src="logo.avif" alt=""></a>
+        </div>
+        <nav id="butoni">
+            <div class="menu"><a href="Home.html">Начало</a></div>
+            <div class="menu"><a href="Parfume.html">Парфюми</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Грим</button>
+                <div class="dropdown-content">
+                    <a href="grimOchi.html">Очи</a>
+                    <a href="grimUstni.html">Устни</a>
+                    <a href="grimVezdi.html">Вежди</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" id="now">Коса</button>
+                <div class="dropdown-content">
+                    <a href="Kosa.html#kosa1">Шампоан</a>
+                    <a href="Kosa.html#kosa2">Боя за коса</a>
+                    <a href="Kosa.html#kosa3">Балсам</a>
+                    <a href="Kosa.html#kosa4">Серум</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Лице</button>
+                <div class="dropdown-content">
+                    <a href="lice1.html">Маска за лице</a>
+                    <a href="lice2.html">Кремове</a>
+                </div>
+            </div>
+            <div class="menu"><a href="Kontakti.html">Контакти</a></div>
+        </nav>
+        <div id="contacti">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="Home\facebook.webp" alt=""></a> Facebook</li>
+                <li><a href="https://www.instagram.com/"><img src="Home\instagram.webp" alt=""></a> Instagram</li>
+                <li><a href="Kontakti.html"><img src="Home\phone.png" alt=""></a> Phone </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <h1>НАЙ-ДОБРИТЕ ПРОДУКТИ ЗА КОСА</h1>
+    <h3 style="text-align: center; font-size: 20px;">ДНЕС НА ПРОМОЦИЯ СА:</h3>
+    <div id="slidera">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 8</div>
+                <a href="#kosa1"><img src="Коса\kosa1.jpg"></a>
+                <div class="text">KALLOS COSMETICS KERATIN</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 8</div>
+                <a href="#kosa1"><img src="Коса\kosa2.jpg"></a>
+                <div class="text">OLAPLEX BOND MAINTENANCE NO. 4</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 8</div>
+                <a href="#kosa2"><img src="Коса\boq1.jpg" alt=""></a>
+                <div class="text">REVLON PROFESSIONAL EQUAVE KIDS PRINCESS 2 IN 1</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 8</div>
+                <a href="#kosa2"><img src="Коса\boq2.jpg" alt=""></a>
+                <div class="text">TIGI BED HEAD RESURRECTION DUO KIT</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 8</div>
+                <a href="#kosa3"><img src="Коса\balsam1.jpg" alt=""></a>
+                <div class="text">REVLON PROFESSIONAL EQUAVE KIDS PRINCESS 2 IN 1</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 8</div>
+                <a href="#kosa3"><img src="Коса\balsam2.jpg" alt=""></a>
+                <div class="text">TIGI BED HEAD RESURRECTION DUO KIT</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 8</div>
+                <a href="#kosa4"><img src="Коса\serum1.jpg" alt=""></a>
+                <div class="text">OLAPLEX BONDING OIL NO. 7</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 8</div>
+                <a href="#kosa4"><img src="Коса\serum2.webp" alt=""></a>
+                <div class="text">L'ORÉAL PARIS ELSEVE EXTRAORDINARY OIL</div>
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+    
+    <div id="bigDiv">
+        <h1 id="kosa1">Ш А М П О А Н И</h1>
+        <div id="HairShampoo">
+            <div id="shampoan1">
+                <div id="center">
+                    <img src="Коса\kosa1.jpg" alt="">
+                    <h2>KALLOS COSMETICS KERATIN</h2>
+                    <p>Регенериращ шампоан за коса с кератин за жени 1000 ml</p>
+                    <p id="price">Цена: 29,80 лв.</p>
+                    <a id="info"
+                        href="https://www.parfimo.bg/kallos-cosmetics-keratin-shampoan-za-jeni-1000-ml/">Купи</a>
+
+                </div>
+                <div>
+                    <h2>Описание</h2>
+                    <p>Описание
+                        Шампоан Kallos Keratin е полезен помощник за грижата за суха и чуплива коса. Съдържа кератин и
+                        млечни протеини, които регенерират, омекотяват и укрепват косата.
+
+                        Защо кератиновият шампоан Kallos е толкова полезен?
+                    <ul>
+                        <li>подобрява структурата на косата отвътре и отвън,</li>
+                        <li>попълва кератина в косата, като по този начин заздравява малки пукнатини,</li>
+                        <li>омекотява косата, така че се чупи по-малко,</li>
+                        <li>изглажда косата и предотвратява нежеланото накъдряне,</li>
+                        <li>хидратира и повишава еластичността на косъма</li>
+                    </ul>
+                    Правилно използване на шампоан Kallos:
+                    Нанесете върху мокра коса, разпенете добре и след това изплакнете обилно.</p>
+                </div>
+            </div>
+            <div id="shampoan2">
+                <div id="center">
+                    <img src="Коса\kosa2.jpg" alt="">
+                    <h2>OLAPLEX BOND MAINTENANCE NO. 4</h2>
+                    <p>Регенериращ шампоан за всеки тип коса за жени 250 ml</p>
+                    <p id="price">Цена: 49,80 лв.</p>
+                    <a id="info"
+                        href="https://www.parfimo.bg/olaplex-bond-maintenance-no-4-shampoan-za-jeni-250-ml/">Купи</a>
+
+                </div>
+                <div>
+                    <h2>Описание</h2>
+                    <p>Описание
+                        Регенериращ шампоан за всички типове коси Olaplex No. 4 Bond Maintenance
+
+                        Шампоанът е обогатен със същата съставка, която е включена в продукта Olaplex no. 3, която
+                        активно и
+                        интензивно регенерира и хидратира изтощени или отслабени коси. Придава на косата естествен
+                        блясък и
+                        е подходящ за използване върху всички типове коси. Olaplex No. 4 Bond Maintenance не съдържа
+                        сулфати, парабени, глутен и животински продукти и е подходящ за всички любители на веганския
+                        начин
+                        на живот. За най-добри резултати използвайте пълната терапия за коса Olaplex. След употребата на
+                        шампоан No. 4, косата ви ще бъде отнова здрава, блестяща и регенерирана.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 id="kosa2">Б О И </h1>
+        <div id="hairLosion">
+            <div id="boi1">
+                <div id="center">
+                    <img src="Коса\boq1.jpg" alt="">
+                    <h2>L'ORÉAL PARIS PRÉFÉRENCE LES BLONDISSIMES</h2>
+                    <p>Боя за коса за жени 1 бр нюанс Ultra Platinum</p>
+                    <p id="price">Цена: 12,40 лв.</p>
+                    <a id="info"
+                        href="https://www.parfimo.bg/l-oreal-paris-preference-les-blondissimes-boya-za-kosa-za-jeni-1-br-nyuans-ultra-platinum/">Купи</a>
+
+                </div>
+                <div>
+                    <h2>Описание</h2>
+                    <p>Описание
+                        Боя за коса L'Oreal Paris Préférence les Blondissimes Hair Color. Дълготрайна боя за коса с
+                        високоустойчиви оцветяващи компоненти. Оставя косата ослепително блестяща до 8 седмици. Подарете
+                        си
+                        луксозен цветен резултат с цвета Préférence.
+
+                        Начин на употреба: Следвайте инструкциите съгласно приложеното ръководство за употреба.</p>
+                </div>
+
+            </div>
+
+            <div id="boi2">
+                <div id="center">
+                    <img src="Коса\boq2.jpg" alt="">
+                    <h2>WELLA PROFESSIONALS WELLOXON PERFECT OXIDATION CREAM PASTEL 1,9%</h2>
+                    <p>Крем-оксидант за боя за коса за жени 1000 ml</p>
+                    <p id="price">Цена: 14,80 лв.</p>
+                    <a id="info"
+                        href="https://www.parfimo.bg/wella-professionals-welloxon-perfect-oxidation-cream-pastel-1-9-boya-za-kosa-za-jeni-1000-ml/">Купи</a>
+
+                </div>
+                <div>
+                    <h2>Описание</h2>
+                    <p>Търсите ли топ козметика за коса без компромиси в качеството? Запознайте се с популярната марка
+                        Wella
+                        Professionals, която ще ви осигури перфектен външен вид . Германската марка предлага ефективни
+                        шампоани, балсами, маски, серуми, както и стилизиращи продукти и иновативни бои за коса. Можете
+                        да
+                        ги намерите в професионалните салони на милиони фризьори, но също така и по рафтовете на
+                        домакинствата по целия свят. Позволява както на лаици, така и на професионалисти да превърнат
+                        своите
+                        визии в реалност, справя се с всяка дължина и всеки тип коса. .</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <h1 id="kosa3">Б А Л С А М И</h1>
+        <div id="hairBalsam">
+            <div id="balsam1">
+                <div id="center">
+                    <img src="Коса\balsam1.jpg" alt="">
+                    <h2>REVLON PROFESSIONAL EQUAVE KIDS PRINCESS 2 IN 1</h2>
+                    <p>Шампоан и кондиционер(балсам) 2 в 1 за деца 300 ml</p>
+                    <p id="price">Цена: 12,00 лв.</p>
+                    <a id="info"
+                        href="https://www.parfimo.bg/revlon-professional-equave-kids-princess-look-2-in-1-shampoan-za-deca-300-ml/">Купи</a>
+
+                </div>
+                <div>
+                    <h2>Описание</h2>
+                    <p>Подарете на вашата малка принцеса приказна баня с детски шампоан Revlon Professional Equave Kids
+                        Princess Look.
+                        Защо децата ще се влюбят в шампоан Equave Kids Princess Look?
+                    <ul>
+                        <li>грижи се за детската коса,</li>
+                        <li>комбинира действието на шампоан и балсам,</li>
+                        <li>нежно измива и хидратира косата,</li>
+                        <li> улеснява разресването,</li>
+                        <li>има сладък нежен аромат,</li>
+                        <li>фина текстура,</li>
+                        <li>идеален за деца от 3 години</li>
+                    </ul>
+                    </p>
+                </div>
+
+            </div>
+            <div id="balsam2">
+                <div id="center">
+                    <img src="Коса\balsam2.jpg" alt="">
+                    <h2>TIGI BED HEAD RESURRECTION DUO KIT</h2>
+                    <p>Подаръчен комплект за жени</p>
+                    <p id="price">Цена: 32,20 лв.</p>
+                    <a id="info"
+                        href="https://www.parfimo.bg/tigi-bed-head-resurrection-duo-kit-podarachen-komplekt-za-jeni-shampoan-750-ml-balsam-750-ml/">Купи</a>
+
+                </div>
+                <div>
+                    <h2>Описание</h2>
+                    <p>Описание
+                        Боя за коса L'Oreal Paris Préférence les Blondissimes Hair Color. Дълготрайна боя за коса с
+                        високоустойчиви оцветяващи компоненти. Оставя косата ослепително блестяща до 8 седмици. Подарете
+                        си
+                        луксозен цветен резултат с цвета Préférence.
+
+                        Начин на употреба: Следвайте инструкциите съгласно приложеното ръководство за употреба.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <h1 id="kosa4">С Е Р У М И</h1>
+        <div id="hairSerum" hairBalsam>
+            <div id="serum1">
+                <div id="center">
+                    <img src="Коса\serum1.jpg" alt="">
+                    <h2>OLAPLEX BONDING OIL NO. 7</h2>
+                    <p>Регенериращо масло за коса за жени 30 ml</p>
+                    <p id="price">Цена: 44,30 лв.</p>
+                    <a id="info"
+                        href="https://www.parfimo.bg/olaplex-bonding-oil-no-7-masla-za-kosa-za-jeni-30-ml/">Купи</a>
+
+                </div>
+                <div>
+                    <h2>Описание</h2>
+                    <p>Описание
+                        Описание
+                        Регенериращо масло за коса Olaplex Bonding Oil No. 7 съдържа патентована технология в грижата за
+                        увредената коса, като възстановява нейната жизненост и еластичност..
+
+                        Защо да изберете Olaplex Bonding Oil No.7?
+                    <ul>
+                        <li>регенерира увредената коса и цъфтящите краища</li>
+                        <li>предпазва при термичен стайлинг до 230°C</li>
+                        <li>лека консистенция, която се абсорбира добре и не омазнява косата</li>
+                        <li>предотвратява нежеланото накъдряне (frizz effect)</li>
+                        <li>увеличава нейния обем и блясък,</li>
+                        <li>осигурява лесно оформяне на прическата</li>
+                        <li>не съдържа парабени, сулфати и фталати</li>
+                        <li>не е тестван върху животни</li>
+                        <li>подходящ за всеки тип коса</li>
+                    </ul>
+                    Начин на приложение: Капнете няколко капки масло в дланите на ръцете си и втривайте в суха или
+                    влажна коса.</p>
+                </div>
+
+            </div>
+            <div id="serum2">
+                <div id="center"><img src="Коса\serum2.webp" alt="">
+                    <h2>L'ORÉAL PARIS ELSEVE EXTRAORDINARY OIL</h2>
+                    <p>Олио за коса с копринен комплекс за всички типове коси за жени 100 ml</p>
+                    <p id="price">Цена: 19,10 лв.</p>
+                    <a id="info"
+                        href="https://www.parfimo.bg/l-oreal-paris-elseve-extraordinary-oil-masla-za-kosa-za-jeni-100-ml/">Купи</a>
+
+                </div>
+                <div>
+                    <h2>Описание</h2>
+                    <p>
+                        Описание
+                        Масло за коса L'Oreal Paris Elseve Extraordinary Oil е подходящо за всички типове коса. То
+                        осигурява подхранване, защита, улеснява оформянето и придава копринен вид.
+
+                        Elseve Extraordinary Oil за здрава и красива коса
+                    <ul>
+                        <li>формула, богата на растителни масла и екстракти,</li>
+                        <li>подхранва, хидратира и укрепва,</li>
+                        <li>омекотява,</li>
+                        <li>улеснява разресването,</li>
+                        <li>дава блясък,</li>
+                        <li>помага за оформянето на прическата.</li>
+                    </ul>
+                    Начин на употреба:
+                    Можете да нанасяте маслото преди измиване на косата, преди разресване или върху суха коса.
+                    Разпределете 3-4 капки масло по цялата дължина на косата.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<hr><footer>
+    <div>От Емили Борисова</div>
+    <div>ун. "Св. Св. Кирил и Методии", град Търново</div>
+</footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    
+</body>
+
+</html>

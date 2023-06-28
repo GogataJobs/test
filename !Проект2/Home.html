@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="genralStyle.css">
+    <style>
+        img {
+            height: 400px;
+        }
+
+
+        .mySlides {
+            display: none;
+        }
+
+        .slideshow-container {
+            width: 700px;
+            height: 450px;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            border: 1px solid rgb(203, 202, 202);
+        }
+
+        .text {
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            padding-bottom: 10px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .numbertext {
+            color: black;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 1s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        .fade {
+            animation-duration: 3.5s;
+        }
+
+
+
+
+
+        #div1 {
+            display: flex;
+            padding: 50px;
+        }
+
+        #opisanie {
+            text-align: justify;
+            padding-left: 30px;
+        }
+
+        #h5 {
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        #list1,
+        #list2 {
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+            text-align: center;
+            padding: 30px;
+
+        }
+
+        #list1 ul li a,
+        #list2 ul li a {
+            color: rgb(163, 161, 161);
+
+        }
+
+        #list1 img,
+        #list2 img {
+            height: 50px;
+        }
+
+        #list1 h3 a,
+        #list2 h3 a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #list1 h3 a:hover,
+        #list2 h3 a:hover {
+            color: white;
+            background-color: #CB769E;
+
+        }
+
+        #list1 ul li a:hover,
+        #list2 ul li a:hover {
+            text-decoration: none;
+
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <header>
+        <div id="logo">
+            <a href="Home.html"><img src="logo.avif" alt=""></a>
+        </div>
+        <nav id="butoni">
+            <div class="menu_now"><a href="Home.html">Начало</a></div>
+            <div class="menu"><a href="Parfume.html">Парфюми</a></div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Грим</button>
+                <div class="dropdown-content">
+                    <a href="grimOchi.html">Очи</a>
+                    <a href="grimUstni.html">Устни</a>
+                    <a href="grimVezdi.html">Вежди</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn2">Коса</button>
+                <div class="dropdown-content">
+                    <a href="Kosa.html#kosa1">Шампоан</a>
+                    <a href="Kosa.html#kosa2">Боя за коса</a>
+                    <a href="Kosa.html#kosa3">Балсам</a>
+                    <a href="Kosa.html#kosa4">Серум</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn3">Лице</button>
+                <div class="dropdown-content">
+                    <a href="lice1.html">Маска за лице</a>
+                    <a href="lice2.html">Кремове</a>
+                </div>
+            </div>
+            <div class="menu"><a href="Kontakti.html">Контакти</a></div>
+        </nav>
+        <div id="contacti">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <img src="Home\facebook.webp" alt="">
+                    </a>
+                    Facebook
+                </li>
+                <li><a href="https://www.instagram.com/"><img src="Home\instagram.webp" alt=""></a> Instagram</li>
+                <li><a href="Kontakti.html"><img src="Home\phone.png" alt=""></a> Phone </li>
+            </ul>
+        </div>
+
+    </header>
+    <hr>
+    <div id="div1">
+        <div id="slidera">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 4</div>
+                    <a href="Parfume.html"><img src="Парфюм\par2.jpg"></a>
+                    <div class="text">CALVIN KLEIN EUPHORIA</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <a href="grimOchi.html"><img src="Грим\ochi\grim1.jpg"></a>
+                    <div class="text">HERMES H24</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <a href="Kosa.html"><img src="Коса\boq1.jpg" alt=""></a>
+                    <div class="text">JOOP! HOMME</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="Грим\ustni\u1.jpg">
+                    <div class="text">CHLOÉ CHLOÉ</div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div id="opisanie">
+            <h1 style="text-align: center;">Лесно и Красиво</h2>
+                <p>Палитрите за грим са невероятна възможност за всички любители на козметиката. Опаковките, съдържащи
+                    многоцветни сенки за очи, флуиди, червила, бронзанти, ружове и хайлайтъри с различни текстури, имат
+                    предимство пред единичните продукти, че са перфектно съчетани от гледна точка на нюанси, подредба и
+                    консистенция, благодарение на което осигуряват елегантни тонални преходи.</p>
+                <p>Стилно направените палитри за грим са чудесна идея за подарък на любим човек, особено ако получателят
+                    обича да експериментира със собствения си имидж. Струва си да се инвестира в такава козметика, която
+                    е
+                    допълнително обогатена с полезни вещества за грижа, като масла, растителни екстракти и витаминни
+                    комплекси. Цените им обикновено са по-високи, но се отличават с благоприятни ефекти върху кожата,
+                    което
+                    е изключително важно.</p>
+        </div>
+    </div>
+
+
+    <p id="h5">100% ОРИГИНАЛНИ ПАРФЮМИ И КОЗМЕТИКА ОНЛАЙН</p>
+    <div id="list1">
+        <div>
+            <div>
+                <img id="animetedPic" src="Home\p1.webp" alt="">
+                <h3 id="bez"><a href="Parfume.html">ПАРФЮМИ</a></h3>
+            </div>
+            <ul>
+                <li> <a href="Parfume.html#parf">Eau de Parfum</a> </li>
+                <li> <a href="Parfume.html#parf">Eau de Toilette</a> </li>
+                <li> <a href="Parfume.html#parf">Парфюм</a> </li>
+            </ul>
+        </div>
+        <div>
+            <img id="animetedPic" src="Home\p2.jpg" alt="">
+            <h3><a href="">ГРИМ</a></h3>
+            <ul>
+                <li> <a href="grimOchi.html">Очи</a> </li>
+                <li> <a href="grimUstni.html">Устни</a> </li>
+                <li> <a href="grimVezdi.html">Вежди</a> </li>
+            </ul>
+        </div>
+        <div>
+            <img id="animetedPic" src="Home\p3.jpg" alt="">
+            <h3><a href="Kosa.html">КОСА</a></h3>
+            <ul>
+                <li> <a href="Kosa.html#kosa1">Шампоан</a> </li>
+                <li> <a href="Kosa.html#kosa2">Лосион</a> </li>
+                <li> <a href="Kosa.html#kosa3">Балсам</a> </li>
+                <li> <a href="Kosa.html#kosa4">Серум</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div id="list2">
+        <div>
+            <img id="animetedPic" src="Home\p4.jpg" alt="">
+            <h3><a href="">ЛИЦЕ</a></h3>
+            <ul>
+                <li> <a href="lice1.html">Маска за лице</a></li>
+                <li> <a href="lice2.html">Кремове</a> </li>
+            </ul>
+        </div>
+        <div>
+            <img id="animetedPic" src="Home\p5.png" alt="">
+            <h3><a href="Kontakti.html">Контакти</a></h3>
+            <ul>
+                <li> <a href="Kontakti.html">Кон. форма</a></li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <hr>
+    <footer>
+        <div>От Емили Борисова</div>
+        <div>ун. "Св. Св. Кирил и Методии", град Търново</div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>

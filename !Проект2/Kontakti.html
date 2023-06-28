@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="genralStyle.css">
+    <style>
+        body {
+            background-color: #F1F1F1;
+        }
+
+        .contactinf {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .adres {
+            width: 45%;
+            height: 350px;
+            border: solid rgb(174, 173, 173) 3px;
+            padding-left: 30px;
+            background-color: white;
+        }
+
+        .map {
+            width: 45%;
+            border: solid rgb(174, 173, 173) 3px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            line-height: 40px;
+        }
+
+        textarea {
+            width: 700px;
+            padding: 12px;
+            border: 2px solid black;
+        }
+
+        .container {
+            padding: 20px;
+            width: 800px;
+            margin: auto;
+            border: 2px solid rgb(174, 173, 173);
+            font-weight: bold;
+            background-image: linear-gradient(to right, rgb(206, 205, 205), gray);
+            display: flex;
+        }
+
+        #country {
+            width: 150px;
+        }
+
+        #subject {
+            height: 200px;
+        }
+
+        #submit {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        #fname,
+        #lname,
+        #subject {
+            color: gray;
+
+        }
+
+        #gen {
+            float: right;
+            padding-right: 300px;
+        }
+
+        #cel {
+            float: right;
+            padding-right: 130px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="Home.html"><img src="logo.avif" alt=""></a>
+        </div>
+        <nav id="butoni">
+            <div class="menu"><a href="Home.html">Начало</a></div>
+            <div class="menu"><a href="Parfume.html">Парфюми</a></div>
+            <div class="dropdown">
+                <button class="dropbtn">Грим</button>
+                <div class="dropdown-content">
+                    <a href="grimOchi.html">Очи</a>
+                    <a href="grimUstni.html">Устни</a>
+                    <a href="grimVezdi.html">Вежди</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Коса</button>
+                <div class="dropdown-content">
+                    <a href="Kosa.html#kosa1">Шампоан</a>
+                    <a href="Kosa.html#kosa2">Боя за коса</a>
+                    <a href="Kosa.html#kosa3">Балсам</a>
+                    <a href="Kosa.html#kosa4">Серум</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Лице</button>
+                <div class="dropdown-content">
+                    <a href="lice1.html">Маска за лице</a>
+                    <a href="lice2.html">Кремове</a>
+                </div>
+            </div>
+            <div class="menu_now"><a href="Kontakti.html">Контакти</a></div>
+        </nav>
+        <div id="contacti">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="Home\facebook.webp" alt=""></a> Facebook</li>
+                <li><a href="https://www.instagram.com/"><img src="Home\instagram.webp" alt=""></a> Instagram</li>
+                <li><a href="konatkti.html"><img src="Home\phone.png" alt=""></a> Phone </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <h1>Контакти</h1>
+        <section class="contactinf">
+            <article class="adres">
+                <h3>Адрес</h3>
+                <p>Ново село, Сливен</p>
+                <p>ул. „Черно море“ 20, 8802</p>
+                <p>Работно време - 8:00-22:00</p>
+                <h3>Контакти</h3>
+                <p>Телефон: 0700 16 116</p>
+                <p>email: Parfimo@gmail.com</p>
+                <p>abv: ParfimoBeauty:abv.bg</p>
+            </article>
+            <article class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.784730237016!2d26.327365415700232!3d42.68710212237742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a62749527ea43b%3A0x1da954166d11ce16!2zUEFSRklNTy5iZ8KuIC0g0L7RgNC40LPQuNC90LDQu9C90Lgg0L_QsNGA0YTRjtC80Lgg0Lgg0LrQvtC30LzQtdGC0LjQutCwINC-0L3Qu9Cw0LnQvQ!5e0!3m2!1sbg!2sbg!4v1677926424606!5m2!1sbg!2sbg"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            <br>
+
+        </section>
+        <br>
+        <div class="container">
+            <form action="action_page">
+
+                <label name="fname" style="text-decoration: underline 3px;">Име</label>
+                <div id="gen">
+                    <label for="gender" style="text-decoration: underline 3px;">Пол:</label><br>
+                    <input type="radio" id="male" name="user_gender" value="male">
+                    <label for="male">Мъж</label><br>
+                    <input type="radio" id="female" name="user_gender" value="female">
+                    <label for="female">Жена</label><br>
+                </div>
+                <br>
+                <input type="text" id="fname" name="firstname" value="Име..">
+
+                <br>
+                <label name="lname" style="text-decoration: underline 3px;">Фамилия</label>
+                <br>
+                <input type="text" id="lname" name="lastname" value="Фамилия.. ">
+                <br>
+                <label type="country" style="text-decoration: underline 3px;">Избери възраст:</label>
+                <div id="cel">
+                    <label for="bodytransformation" style="text-decoration: underline 3px;">Какъв продукт ви
+                        хареса:</label><br>
+                    <input type="checkbox" id="grim">
+                    <label for="grim">Гримове</label><br>
+                    <input type="checkbox" id="Hair">
+                    <label for="Hair">Коса</label><br>
+                    <input type="checkbox" id="Face">
+                    <label for="Face">Лице</label>
+                </div>
+                <br>
+                <select id="country" name="country">
+                    <option>до 10 год.</option>
+                    <option>от 10 до 15 год.</option>
+                    <option>от 15 до 20 год.</option>
+                    <option>от 20 до 25 год.</option>
+                    <option>от 25 до 30 год.</option>
+                    <option>от 30 до 40 год.</option>
+                    <option>от 40 до 50 год.</option>
+                    <option>от 50+ год.</option>
+                </select>
+                <br>
+                <br>
+                <label name="subject" style="text-decoration: underline 3px;">Съобщение</label>
+                <textarea id="subject" name="subject" value="Въведи текст..."></textarea>
+                <br>
+
+                <input type="submit" value="submit" id="submit">
+
+            </form>
+        </div>
+        <br>
+    </main>
+<hr>
+<footer>
+    <div>От Емили Борисова</div>
+    <div>ун. "Св. Св. Кирил и Методии", град Търново</div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+body {
+    width: 1300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+}
+
+.menu_now,
+#now {
+    background-color: rgb(212, 212, 212);
+}
+
+#logo a img {
+    height: 100px;
+    padding-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#butoni a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 30px;
+    color: black;
+    font-size: 20px;
+
+}
+
+#butoni a:hover {
+    text-decoration: underline;
+}
+
+#contacti img {
+    height: auto;
+    width: 30px;
+}
+
+#contacti {
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+#contacti li {
+    color: black;
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+.dropbtn,
+.dropbtn2,
+.dropbtn3 {
+    padding: 19px;
+    font-size: 20px;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dropbtn:hover,
+.dropbtn2:hover,
+.dropbtn3:hover {
+    text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: auto;
+    z-index: 1;
+    border: 2px solid rgb(201, 200, 200);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    background-color:white;
+    margin-top: 20px;
+}
+
+.contacti {
+    float: right;
+}
+
+
+
+
+
+#obqvi1,
+#obqvi2 {
+    padding: 10px;
+    text-align: center;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto
+}
+
+#otstupka {
+    float: left;
+    background-color: rgb(189, 46, 101);
+    color: white;
+    font-weight: bold;
+}
+
+#obqvi1 img,
+#obqvi2 img {
+    height: 200px;
+}
+
+#ime {
+    font-weight: bold
+}
+
+#broi {
+    color: yellowgreen;
+}
+
+#price {
+    font-weight: bold;
+}
+
+
+
+
+#kontiner {
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    transition: width 1s
+}
+
+#kontiner:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 310px;
+}
+
+#info {
+    color: black;
+}
+
+#kontiner div:hover {
+    color: white;
+    background-color: rgb(174, 173, 173);
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    margin: auto;
+}
