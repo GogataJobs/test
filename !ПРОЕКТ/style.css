@@ -1,0 +1,160 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    font-weight: bold;
+}
+
+body {
+    width: 1200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    margin: auto;
+}
+
+.logo {
+    height: 120px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+#butoni a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 30px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+#butoni a:hover {
+    background-color: red;
+    border-radius: 30px;
+}
+.menu_now{
+    background-color: red;
+}
+
+
+
+input.search {
+    height: 20px;
+    width: 100px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #ffffff;
+    background-image: url('search.png');
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 46px;
+    transition-timing-function: ease-in-out;
+    transition: width 1s;
+
+}
+
+input.search:focus {
+    transition: 1s;
+    width: 120px;
+}
+
+input.search:hover {
+    background-image: url('search1.png');
+}
+
+#contacti img {
+    height: auto;
+    width: 30px;
+}
+
+#contacti {
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+#contacti li {
+    color: red;
+    list-style-type: none;
+    
+}
+
+
+
+
+
+.dropdown {
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 30px;
+    color: white;
+    font-size: 20px;
+    transition: all 0.5s ease;
+    background-color: black;
+
+}
+
+.dropdown:hover {
+    background-color: red;
+    border-radius: 30px;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.show {
+    display: block;
+}
+
+
+
+
+
+
+footer {
+    color: red;
+    background-color: black;
+    height: 25px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.autor {
+    float: left;
+}
+
+.year {
+    float: right;
+}

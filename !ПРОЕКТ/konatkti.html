@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+    <style>
+        .contactinf {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .adres {
+            width: 45%;
+            height: 350px;
+            border: solid black 3px;
+            padding-left: 30px;
+            background-color: white;
+        }
+
+        .map {
+            width: 45%;
+            border: solid black 3px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            line-height: 40px;
+        }
+
+        textarea {
+            width: 700px;
+            padding: 12px;
+            border: 2px solid black;
+        }
+
+        .container {
+            padding: 20px;
+            width: 800px;
+            margin: auto;
+            border: 2px solid gray;
+            font-weight: bold;
+            background-image: linear-gradient(to right, red, rgb(106, 19, 19));
+            display: flex;
+        }
+
+        #country {
+            width: 150px;
+        }
+
+        #subject {
+            height: 200px;
+        }
+
+        #submit {
+            width: 100px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        main {
+            background-color: black;
+        }
+        
+
+        #fname,
+        #lname,
+        #subject {
+            color: gray;
+
+        }
+
+        #gen {
+            float: right;
+            padding-right: 300px;
+        }
+
+        #cel {
+            float: right;
+            padding-right: 90px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="ab26c2360ca97904e4163d6089e33b73.jpg" alt="" />
+        </div>
+        <nav id="butoni">
+            <div class="menu"><a href="index1.html">Начало</a></div>
+            <div class="menu"><a href="Programs.html">Програми</a></div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Промоции
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="Protein.html">Протеин</a><br>
+                    <a href="Creatin.html"> Креатин</a><br>
+                    <a href="Pre-Workout.html"> Pre-Workout</a><br>
+                    <a href="BCAA.html"> BCAA</a>
+                </div>
+            </div>
+            <div class="menu_now"><a href="konatkti.html">Контакти</a></div>
+        </nav>
+        <form class="search" method="post" action="search.html">
+            <input class="search" type="text" name="search" id="search" value="Търси..." />
+        </form>
+        <div id="contacti">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="изтеглен файл.png" alt=""></a> Facebook</li>
+                <li><a href="https://www.instagram.com/"><img src="изтеглен файл.jpg" alt=""></a> Instagram</li>
+                <li><a href="konatkti.html"><img src="изтеглен файл (1).png" alt=""></a> Phone </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Контакти</h1>
+        <section class="contactinf">
+            <article class="adres">
+                <h3>Адрес</h3>
+                <p>гр.Плевен</p>
+                <p>ул."Русе" 87Г</p>
+                <p>Работно време - 7:00-22:00</p>
+                <h3>Контакти</h3>
+                <p>Телефон: 087 421 0987</p>
+                <p>email: TheBestGym@gmail.com</p>
+                <p>abv: PlevenGym:abv.bg</p>
+            </article>
+            <article class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23186.688121886935!2d24.631426391595785!3d43.41180580592698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40abf56fa2160b1b%3A0xddb079d3a395dc73!2sLion&#39;s%20Pride%20Fitness!5e0!3m2!1sbg!2sbg!4v1674318565174!5m2!1sbg!2sbg"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+            <br>
+
+        </section>
+        <br>
+        <div class="container">
+            <form action="action_page">
+
+                <label name="fname" style="text-decoration: underline 3px;">Име</label>
+                <div id="gen">
+                    <label for="gender" style="text-decoration: underline 3px;">Пол:</label><br>
+                    <input type="radio" id="male" name="user_gender" value="male">
+                    <label for="male">Мъж</label><br>
+                    <input type="radio" id="female" name="user_gender" value="female">
+                    <label for="female">Жена</label><br>
+                </div>
+                <br>
+                <input type="text" id="fname" name="firstname" value="Име..">
+
+                <br>
+                <label name="lname" style="text-decoration: underline 3px;">Фамилия</label>
+                <br>
+                <input type="text" id="lname" name="lastname" value="Фамилия.. ">
+                <br>
+                <label type="country" style="text-decoration: underline 3px;">Избери възраст:</label>
+                <div id="cel">
+                    <label for="bodytransformation" style="text-decoration: underline 3px;">Вашата цел:</label><br>
+                    <input type="checkbox" id="FatBurn">
+                    <label for="FatBurn">Отслабване</label><br>
+                    <input type="checkbox" id="muscleGrowth">
+                    <label for="muscleGrowth">Покачване на мусулна маса</label>
+                </div>
+                <br>
+                <select id="country" name="country">
+                    <option>до 10 год.</option>
+                    <option>от 10 до 15 год.</option>
+                    <option>от 15 до 20 год.</option>
+                    <option>от 20 до 25 год.</option>
+                    <option>от 25 до 30 год.</option>
+                    <option>от 30 до 40 год.</option>
+                    <option>от 40 до 50 год.</option>
+                    <option>от 50+ год.</option>
+                </select>
+                <br>
+                <br>
+                <label name="subject" style="text-decoration: underline 3px;">Съобщение</label>
+                <textarea id="subject" name="subject" value="Въведи текст..."></textarea>
+                <br>
+
+                <input type="submit" value="Предай" id="submit">
+
+            </form>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <div class="autor">Гeорги Георгиев| 12г клас</div>
+        <div class="year">Година: 2023</div>
+    </footer>
+</body>
+
+</html>

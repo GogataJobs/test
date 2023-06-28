@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
+    <script>
+        function getColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+
+        function setColor() {
+            document.documentElement.style.setProperty('--color', getColor());
+        }
+
+    </script>
+    <style>
+        main {
+            background-color: black;
+        }
+
+        table,
+        tr,
+        td,
+        caption,
+        img {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        td:hover {
+
+            background-color: var(--color);
+        }
+
+        thead {
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #days {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        caption {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        caption:hover {
+            color: white;
+            font-weight: bold;
+            background-color: red;
+
+        }
+
+        article {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            width: 550px;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #treantable {
+            border: 2px solid black;
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+
+        #OthersPrograms {
+            text-indent: 20px;
+        }
+
+        #OthersPrograms div {
+            padding: 20px;
+            border: solid black 2px;
+            font-size: 20px;
+            background-color: red;
+            text-align: center;
+            width: 31%;
+        }
+
+        #OthersPrograms div a {
+            align-items: center;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+
+        #OthersPrograms div a:hover {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+        #h1{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="ab26c2360ca97904e4163d6089e33b73.jpg" alt="" />
+        </div>
+        <nav id="butoni">
+            <div class="menu"><a href="index1.html">Начало</a></div>
+            <div class="menu_now"><a href="Programs.html">Програми</a></div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Промоции
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="Protein.html">Протеин</a><br>
+                    <a href="Creatin.html"> Креатин</a><br>
+                    <a href="Pre-Workout.html"> Pre-Workout</a><br>
+                    <a href="BCAA.html"> BCAA</a>
+                </div>
+            </div>
+            <div class="menu"><a href="konatkti.html">Контакти</a></div>
+        </nav>
+        <form class="search" method="post" action="search.html">
+            <input class="search" type="text" name="search" id="search" value="Търси..." />
+        </form>
+        <div id="contacti">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="изтеглен файл.png" alt=""></a> Facebook</li>
+                <li><a href="https://www.instagram.com/"><img src="изтеглен файл.jpg" alt=""></a> Instagram</li>
+                <li><a href="konatkti.html"><img src="изтеглен файл (1).png" alt=""></a> Phone </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>ТРЕНИРОВЪЧНИ ПРОГРАМИ</h1>
+
+        <article id="treantable">
+            <img src="fitnes2.bmp" alt="">
+            <table id="tab1">
+                <caption>
+                    Седмична сплит тренировъчна програма
+                </caption>
+                <thead>
+                    <tr id="top">
+                        <td onmouseover="setColor();">Ден</td>
+                        <td onmouseover="setColor();">Упражнение</td>
+                        <td onmouseover="setColor();">Почивка</td>
+                        <td onmouseover="setColor();">Серия и <br> повториения</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td onmouseover="setColor();" id="days" rowspan="6"><u>Понеделник</u> <br> Гърди, <br> Трицепс
+                            <br> и Корем
+                        </td>
+                        <td onmouseover="setColor();">Изтласкване на щанга от лег </td>
+                        <td onmouseover="setColor();">2 min</td>
+                        <td onmouseover="setColor();">4*8</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Изтласкване на щанга от полулег </td>
+                        <td onmouseover="setColor();">2 min</td>
+                        <td onmouseover="setColor();">3*10</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Флайс от лег</td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                        <td onmouseover="setColor();">3*12</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Трицепсово разгъване на скрипец </td>
+                        <td onmouseover="setColor();">1 min</td>
+                        <td onmouseover="setColor();">3*12-15</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Коремни преси </td>
+                        <td onmouseover="setColor();">4*12</td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Повдигане на краката </td>
+                        <td onmouseover="setColor();">3*10</td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();" id="days" rowspan="5"><u>Вторник</u><br> Гръб, Бицепс</td>
+                        <td onmouseover="setColor();">Набирания с тесен хват </td>
+                        <td onmouseover="setColor();">2 min</td>
+                        <td onmouseover="setColor();">4*6-8</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Гребане с дъмбел </td>
+                        <td onmouseover="setColor();">4*10-12</td>
+                        <td onmouseover="setColor();"> 1:30 min</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Придърпване на долен скрипец </td>
+                        <td onmouseover="setColor();">3*12-15</td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Бицепсово сгъване с щанга от стоеж </td>
+                        <td onmouseover="setColor();">3*10-12</td>
+                        <td onmouseover="setColor();">1 min</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Чуково (Hammer curls)</td>
+                        <td onmouseover="setColor();">3*10</td>
+                        <td onmouseover="setColor();">1: min</td>
+                    </tr>
+                    <tr id="days">
+                        <td><u>Сряда</u><br> Почивка</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();" id="days" rowspan="4"><u>Четвъртък</u><br> Рамо, <br> Трапец</td>
+                        <td onmouseover="setColor();">Раменни преси отпред </td>
+                        <td onmouseover="setColor();">2 min</td>
+                        <td onmouseover="setColor();">4*6-8</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Разтваряне на ръцете встрани</td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                        <td onmouseover="setColor();">4*8-10</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Раменни преси с дъмбел</td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                        <td onmouseover="setColor();">3*10</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Повдигане на дъмбели за трапец </td>
+                        <td onmouseover="setColor();">1 min</td>
+                        <td onmouseover="setColor();">3*12</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();" id="days" rowspan="7"><u>Петък</u> <br> Бедра, <br> Прасец</td>
+                        <td onmouseover="setColor();">Бедрено разгъване </td>
+                        <td onmouseover="setColor();">2 min</td>
+                        <td onmouseover="setColor();">4*10-12</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Клякане с щанга </td>
+                        <td onmouseover="setColor();">3 min</td>
+                        <td onmouseover="setColor();">3*6-8</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Лег-преса (Leg Press)</td>
+                        <td onmouseover="setColor();">2:30 min</td>
+                        <td onmouseover="setColor();">3*8-10</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Бедрено сгъване </td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                        <td onmouseover="setColor();">3*12</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Римска тяга </td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                        <td onmouseover="setColor();">3*10</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Повдигане на пръсти от Стоеж</td>
+                        <td onmouseover="setColor();">1:30 min</td>
+                        <td onmouseover="setColor();">4*10</td>
+                    </tr>
+                    <tr>
+                        <td onmouseover="setColor();">Повдигане на пръсти от Седеж </td>
+                        <td onmouseover="setColor();">1 min</td>
+                        <td onmouseover="setColor();">3*10</td>
+                    </tr>
+                    <tr id="days">
+                        <td onmouseover="setColor();"><u>Събота</u><br> Почивка</td>
+                    </tr>
+                    <tr id="days">
+                        <td onmouseover="setColor();"><u>Неделя</u><br> Почивка</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <h1 id="h1">ПОДОБНИ ПРОГРАМИ</h1>
+        <article id="OthersPrograms">
+            <div>
+                <h1>Bro Split</h1>
+                <p>Терминът се използва, за да опише начин за разделяне на тренировката на една седмица, особено що се
+                    отнася до вдигане на тежести. Най-общо казано, Bro Splits разделя тренировката между основните
+                    мускулни групи.
+                </p>
+                <p> Идеята зад това е, че можете да се насочите към всяка мускулна група веднъж седмично и да получите
+                    много обеми, защото след това имате цяла седмица за възстановяване, преди да тренирате отново.
+                    Въпреки това, в крайна сметка използвате мускулни групи повече от веднъж седмично, както ще обсъдим
+                    по-долу.</p>
+                <p>Най-често срещаният тип Bro Split е 5-дневен сплит, който се разделя на следните 5 тренировки...</p>
+                </p>
+                <a href="https://lubomirivanov.com/10660/">Още...</a>
+            </div>
+            <div>
+                <h1>Бутащи - Дърпащи - Крака</h1>
+                <p>Тренировките „Бутане-дърпане-крака“ са популярни вече десетилетия.
+                    Всъщност почти всяка доказана във времето програма за сила и качване на мускули отговаря на тази
+                    основна форма и това няма да се промени.</p>
+                <p>Основните причини тази комбинация от бутащи-дърпащи-крака са, че това е изпитана във времето
+                    формула, че така се тренират всички основни мускулни групи, позволяват много време за възстановяване
+                    и могат да бъдат пригодени да отговарят на различни тренировъчни цели, графици, натовареност и начин
+                    на живот. </p>
+                <p>Този сплит е също така и лесен за разбиране и прилагане, а често най-простото решение е и
+                    най-вярното.</p>
+                <a href="https://snc.bg/trenirovka-butashti-darpashti-kraka.html">Още...</a>
+            </div>
+            <div>
+                <h1>Горна - Долна част </h1>
+                <p>
+                <p>Това означава, че организирате тренировката си, така че да тренирате горната част на тялото
+                    (гърди,гръб,рамене,бицепс,трицепс) и долната част на тялото (квадрицепси,глутеуси,задно бедро и
+                    прасци) в отделни дни. Разделянето на тялото на долна и горна част е може би едно от най-умните
+                    решения които може да вземем като за начинаещи. От него става едно гладко преминаване от начинаещ към
+                    средно-напреднал. Така ще може да обърнете специално внимание
+                    на мускулите в горната част в единия ден и на мускулите в долната част в другия ден и то без да
+                    прекарвате цялата седмица във фитнеса. </p>
+                <p>Може да изглежда много старомодно за начинаещите по съвременните стандарти, но пак е супер ефективен
+                    метод за покачване на мускулна маса. По-простичките тренировки, определено са по-добри за нас.</p>
+                </p>
+                <a href="https://klekovete.com/programa-za-gorna-dolna-chast/">Още...</a>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="autor">Гeорги Георгиев| 12г клас</div>
+        <div class="year">Година: 2023</div>
+    </footer>
+</body>
+
+</html>

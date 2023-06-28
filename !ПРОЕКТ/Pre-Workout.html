@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+    <style>
+        #prework {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #prework img {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="ab26c2360ca97904e4163d6089e33b73.jpg" alt="" />
+        </div>
+        <nav id="butoni">
+            <div class="menu"><a href="index1.html">Начало</a></div>
+            <div class="menu"><a href="Programs.html">Програми</a></div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Промоции
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="Protein.html">Протеин</a><br>
+                    <a href="Creatin.html"> Креатин</a><br>
+                    <a href="Pre-Workout.html"> Pre-Workout</a><br>
+                    <a href="BCAA.html"> BCAA</a>
+                </div>
+            </div>
+            <div class="menu"><a href="konatkti.html">Контакти</a></div>
+        </nav>
+        <form class="search" method="post" action="search.html">
+            <input class="search" type="text" name="search" id="search" value="Търси..." />
+        </form>
+        <div id="contacti">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="изтеглен файл.png" alt=""></a> Facebook</li>
+                <li><a href="https://www.instagram.com/"><img src="изтеглен файл.jpg" alt=""></a> Instagram</li>
+                <li><a href="konatkti.html"><img src="изтеглен файл (1).png" alt=""></a> Phone </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <article id="prework">
+            <div><img src="preworkout.jpg" alt=""></div>
+            <div>
+                <h1>Gold Standard Pre-Workout</h1>
+                <p>Gold Standard Pre-Workout е поредната стъпка на Optimum Nutrition, с която компанията налага
+                    стандартите си за качество.
+                    Продуктът е силна предтренировъчна формула, която съчетава най-доказаните и ефективни съставки, за
+                    да създаде перфектния стимулиращ коктейл.
+                </p>
+                <ul><b>Gold Standard Pre-Workout e продукт, който:</b>
+                    <li>Стимулира менталната нагласа преди тренировка;</li>
+                    <li>Подобрява максимално концентрацията;</li>
+                    <li>Води до зверско напомпване, за стимулиране на мускулния растеж;</li>
+                    <li>Повишава ударно енергията;</li>
+                    <li>Увеличава максималната сила;</li>
+                </ul>
+                <h3>Цена 43,05лв.</h3>
+            </div>
+        </article>
+        <article id="prework">
+            <div>
+                <img src="preworkou2.jpg" alt="">
+            </div>
+            <div>
+                <h1>C4 Ripped - Cellucor</h1>
+                <p>C4 Ripped е предтренировъчна добавка, която комбинира в себе си предтренировъчен стимулант и фет
+                    бърнър. Съдържа 5 съставки, зарежда с огромна доза енергия, бори се срещу умората, подпомага
+                    метаболизма, увеличава концентрацията, а в допълнение към това помага при изгаряне на излишните
+                    мазнини. Подходящ е във фаза орелефяване на мускулатурата.</p>
+                <h3>Цена 48,95лв.</h3>
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <div class="autor">Гeорги Георгиев| 12г клас"</div>
+        <div class="year">Година: 2023</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+    <style>
+        #prot {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #prot img {
+            width: 400px;
+            height: 400px;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="ab26c2360ca97904e4163d6089e33b73.jpg" alt="" />
+        </div>
+        <nav id="butoni">
+            <div class="menu"><a href="index1.html">Начало</a></div>
+            <div class="menu"><a href="Programs.html">Програми</a></div>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Промоции
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="Protein.html">Протеин</a><br>
+                    <a href="Creatin.html"> Креатин</a><br>
+                    <a href="Pre-Workout.html"> Pre-Workout</a><br>
+                    <a href="BCAA.html"> BCAA</a>
+                </div>
+            </div>
+            <div class="menu"><a href="konatkti.html">Контакти</a></div>
+        </nav>
+        <form class="search" method="post" action="search.html">
+            <input class="search" type="text" name="search" id="search" value="Търси..." />
+        </form>
+        <div id="contacti">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="изтеглен файл.png" alt=""></a> Facebook</li>
+                <li><a href="https://www.instagram.com/"><img src="изтеглен файл.jpg" alt=""></a> Instagram</li>
+                <li><a href="konatkti.html"><img src="изтеглен файл (1).png" alt=""></a> Phone </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <article id="prot">
+            <div><img src="proteinn.webp" alt=""></div>
+            <div>
+                <h1>Протеин 100% Whey Gold Standard - Optimum Nutrition</h1>
+                <p>Суроватъчният протеин Gold Standard 100% Whey Protein съдържа функционална комбинация от суроватъчен
+                    изолат, концентрат и хидролизат. Има изключително полезен аминокиселинен спектър, добра усвояемост и
+                    перфектно балансиран вкус. Това са само малка част от причините, поради които е сред най-продаваните
+                    протеинови добавки в света.</p>
+                <h3>Цена: 72,95лв.</h3>
+            </div>
+        </article>
+        <article id="prot">
+            <div><img src="proteinn2.webp" alt=""></div>
+            <div>
+                <h1>Протеин Just Whey - GymBeam</h1>
+                <p>Just Whey Protein е многокомпонентен суроватъчен протеин на прах, произведен от млякото на свободно
+                    пасящи крави. Той се отличава с функционална комбинация от суроватъчен протеин концентрат, изолат и
+                    хидролизат, благодарение на което има голяма бионаличност. Освен това е лесно смилаем, което се
+                    дължи
+                    най-вече на добавения комплекс от храносмилателни ензими, наречен DigeZyme®. Това го прави лесен
+                    избор,
+                    с помощта на който да се грижите за приема на белтъчини, които са важни за растежа и поддържането на
+                    мускулната маса и поддържането на оптимално здраве на костите.</p>
+                <h3>Цена 56.75 лв</h3>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="autor">Гeорги Георгиев| 12г клас</div>
+        <div class="year">Година: 2023</div>
+    </footer>
+</body>
+
+</html>
